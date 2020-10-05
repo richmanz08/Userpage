@@ -76,7 +76,7 @@ function PageBversion2(props) {
           <Link to="/PageAversion2" style={{ textDecoration: "none" }}>
             <button className="BackHome" onClick={"/PageAversion2"}>
               <img className="iconnBackhome" src="./back.png" alt="value" />
-              ย้อนกลับ
+              <div className="fontBackhome">ย้อนกลับ</div>
             </button>
           </Link>
         </div>
@@ -95,7 +95,7 @@ function PageBversion2(props) {
                 <div className="K21">ชื่อกระบวนการ</div>
                 <div className="K22"></div>
                 {/* <div className="K23">{questions && questions.description}</div> */}
-                <div className="K23">Test</div>
+                <div className="K23">หน่วยงานการไฟฟ้าส่วนภูมิภาค</div>
               </div>
             </div>
           </div>

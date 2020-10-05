@@ -10,6 +10,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   height: 100vh;
+  background-color: #e4e6e5;
 }
 .GridLeft {
   height: 100vh;
@@ -220,7 +221,7 @@ body {
   margin-bottom: 20px;
 } */
 .version2 {
-  background-color: #ffffff;
+  background-color: #e4e6e5;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -241,6 +242,8 @@ body {
   /* align-items: center; */
   margin-right: 510px;
   /* width: fit-content; */
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .K1 {
   display: flex;
@@ -264,7 +267,8 @@ body {
   margin-top: 18px;
   font-weight: 500;
   margin-left: 10px;
-  width: 200px;
+  width: fit-content;
+  margin-right: 5px;
 }
 .K13 {
   height: fit-content;
@@ -326,6 +330,9 @@ body {
   display: flex;
   margin: 10px;
   height: 80px;
+  width: fit-content;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .BeforeNumber {
   background-color: #535554;
@@ -349,6 +356,7 @@ body {
   display: flex;
   background-color: #c4c9c6;
   width: 800px;
+  /* margin: 10px; */
 }
 .ZoneQuestion {
   margin-left: 10px;
@@ -491,18 +499,21 @@ body {
   margin-right: 2px;
 }
 .BackHome {
+  display: flex;
   width: 85px;
   height: 35px;
   font-family: "Prompt";
   border-radius: 5px;
   color: rgb(92, 87, 87);
   margin-top: 15px;
+  margin-left: 10px;
   border: 1px solid;
   border-color: rgba(192, 185, 185, 0.788);
   transition: all 0.3s ease-in-out 0s;
   font-size: 14px;
   border-style: solid;
-  /* border-color: wheat; */
+  justify-items: center;
+  align-items: center;
 }
 .BackHome:hover {
   width: 95px;
@@ -534,7 +545,7 @@ body {
     /* height: fit-content; */
   }
   .Inbox {
-    width: 95vw;
+    width: 88vw;
     height: fit-content;
     align-items: center;
   }
@@ -641,6 +652,12 @@ body {
     margin-left: 80%;
     margin-right: 20%;
   }
+  .BackHome:hover {
+    width: 85px;
+    height: 35px;
+    /* border: none; */
+    /* border-style: inherit; */
+  }
   .sizeBox {
     margin-left: 5px;
     margin-right: 5px;
@@ -670,7 +687,25 @@ body {
     position: fixed;
   }
 }
-
+@media (max-width: 600px) {
+  .BackHome {
+    margin: 0;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: inherit;
+  }
+  .BackHome:hover {
+    width: 31px;
+    height: 35px;
+    /* border: none; */
+    /* border-style: inherit; */
+  }
+  .fontBackhome {
+    display: none;
+  }
+}
 @media (max-width: 550px) {
   .settingCom {
     font-size: 18px;
@@ -685,6 +720,9 @@ body {
     height: 50%;
     /* margin-bottom: 1px; */
   }
+  .K23 {
+    font-size: 14px;
+  }
 }
 @media (max-width: 480px) {
   .Grid {
@@ -698,11 +736,7 @@ body {
   .GridRight {
     display: none;
   }
-  .BackHome {
-    margin: 0;
-    margin-top: 10px;
-    margin-left: 5px;
-  }
+
   .sizeBox {
     display: flex;
     align-items: center;
@@ -718,6 +752,7 @@ body {
 
     margin: 0;
     margin-bottom: 20px;
+    margin-top: 25px;
   }
 
   .HostLine {
@@ -744,6 +779,10 @@ body {
   }
   .L13 {
     margin: 0;
+    width: 80px;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 6px;
   }
   .Line2 {
     flex-direction: column;
@@ -752,6 +791,7 @@ body {
   }
   .L21 {
     margin: 0;
+    margin-bottom: 4px;
   }
   .L22 {
     margin: 0;
@@ -762,6 +802,7 @@ body {
   .sizeBox {
     flex-direction: column;
     width: 90vw;
+    height: 200px;
   }
   .tab {
     height: 10px;
@@ -788,10 +829,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    background-color: #cccecc;
   }
   .keyNextpage {
     margin: 0;
     margin-top: 10px;
+    margin-bottom: 5px;
   }
   .ZoneHead {
     width: 100vw;
@@ -821,13 +864,12 @@ body {
   .K2 {
     /* flex-direction: column; */
     align-items: center;
-    background-color: rgb(210, 228, 186);
+    background-color: rgb(186, 196, 228);
     justify-content: center;
     align-items: center;
     justify-items: center;
     margin-top: 5px;
-    width: 95vw;
-    margin-left: 8px;
+    width: 100vw;
   }
   .K21 {
     margin: 0;
