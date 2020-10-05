@@ -49,6 +49,7 @@ function PageBversion2(props) {
     },
   ];
   console.log(Question.Q1);
+  console.log(Question.Q2);
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
