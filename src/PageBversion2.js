@@ -49,7 +49,7 @@ function PageBversion2(props) {
     },
   ];
   console.log(Question.Q1);
-  console.log(Question.Q2);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
@@ -167,7 +167,7 @@ function PageBversion2(props) {
             className="btn btn-success MDT btn-sm"
             onClick={handleClose}
           >
-            บันทึก
+            บันทึก5555555
           </Button>
           <Button
             type="button"
