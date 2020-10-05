@@ -57,7 +57,7 @@ function PageAversion2(props) {
             </div>
             <div className="Line2">
               <div className="L21">ชื่อหน่วยงาน</div>
-              <div className="L22">test</div>
+              <div className="L22">งานเทคโนโลยีสารสนเทศ</div>
               {/* <div className="L22">{users && users.user.agency}</div> */}
             </div>
           </div>
@@ -101,6 +101,7 @@ function PageAversion2(props) {
                   </div>
                 </div>
               ))}
+            <div className="space"></div>
           </div>
         </div>
         <div className="GridRight"></div>

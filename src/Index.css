@@ -23,9 +23,13 @@ body {
 }
 /* PageAversion2 */
 .sizeBox {
+  height: 100px;
   width: 900px;
   display: flex;
   justify-content: center;
+}
+.space {
+  margin-bottom: 10px;
 }
 
 .BoxPageA {
@@ -45,6 +49,7 @@ body {
 .HostLine {
   /* display: flex; */
   margin-right: 480px;
+  margin-top: 30px;
 }
 .Line1 {
   display: flex;
@@ -166,8 +171,8 @@ body {
 .settingCom {
   color: rgba(0, 0, 0, 0.74);
   font-family: "Prompt";
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 500;
 }
 .icon {
   width: 30px;
