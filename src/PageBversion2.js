@@ -75,7 +75,7 @@ function PageBversion2(props) {
         <div className="GridLeft positionB">
           <Link to="/PageAversion2" style={{ textDecoration: "none" }}>
             <button className="BackHome" onClick={"/PageAversion2"}>
-              <img className="iconnBackhome" src="./back.png" alt="value" />
+              <img className="iconBackhome" src="./back.png" alt="value" />
               <div className="fontBackhome">ย้อนกลับ</div>
             </button>
           </Link>
@@ -117,12 +117,16 @@ function PageBversion2(props) {
                       className="ZoneButton"
                       // onClick={() => setDesc(question.description)}
                     >
-                      <button className="B1" onClick={handleShow}>
-                        <img className="iconB" src="./plus.png" alt="value" />
+                      <button className="B1">
+                        <img className="iconBa" src="./plus.png" alt="value" />
                         เพิ่มข้อมูล
                       </button>
                       <button className="B2">
-                        <img className="iconB" src="./clock2.png" alt="value" />
+                        <img
+                          className="iconBb"
+                          src="./clock2.png"
+                          alt="value"
+                        />
                         ประวัติ
                       </button>
                     </div>
@@ -133,51 +137,6 @@ function PageBversion2(props) {
         </div>
         <div className="GridRight"></div>
       </div>
-      {/* Modal กรอกข้อมูล  */}
-      <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header>
-          <Modal.Title>
-            <h4 className="headpopup popup2">กรอกข้อมูล</h4>
-            {/* <h4 className="desc">{desc}</h4> */}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <div className="newAnswer">
-            <TextField
-              label="ตอบ"
-              max="5"
-              // value={values.numberformat}
-              style={({ width: "300px" }, { border: "none" })}
-              onChange={handleChange}
-              id="formatted-numberformat-input"
-              InputProps={{
-                inputComponent: NumberFormatCustom,
-              }}
-            />
-          </div>
-
-          <textarea
-            className="TextareaModalText"
-            placeholder="ข้อมูลเพิ่มเติม 'ตรงนี้' "
-          ></textarea>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button
-            type="button"
-            className="btn btn-success MDT btn-sm"
-            onClick={handleClose}
-          >
-            บันทึก5555555
-          </Button>
-          <Button
-            type="button"
-            className="btn btn-secondary MDTT btn-sm"
-            onClick={handleClose}
-          >
-            ย้อนกลับ
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </div>
   );
 }

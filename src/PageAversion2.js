@@ -53,7 +53,7 @@ function PageAversion2(props) {
             <div className="Line1">
               <div className="L11"></div>
               <div className="L12">การบวนการที่รับผิดชอบ</div>
-              <div className="L13">5 กระบวนการi</div>
+              <div className="L13">5 กระบวนการ</div>
             </div>
             <div className="Line2">
               <div className="L21">ชื่อหน่วยงาน</div>

@@ -1,55 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  
-  Navbar
-   
-} from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 export default function UserScreen(props) {
-
   return (
-    
     <Navbar
-      
       className="navbar-custom"
       sticky="top"
       style={{ display: "flex", justifyContent: "space-between" }}
     >
-      <div style={{ display: "flex" }} >
+      <div style={{ display: "flex" }}>
         {/* <Flip> */}
-          <img
-            src="kusmall.png"
-            width="70"
-            height="60"
-            className="d-inline-block align-top logo-ku-userpage"
-            alt="noo"/>
-           
-        
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div
-              className="backAdmin"
-              style={{ display: "flex", alignItems: "center" }}
+        <img
+          src="home.png"
+          width="70"
+          height="60"
+          className="d-inline-block align-top logo-ku-userpage"
+          alt="noo"
+        />
+
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <div
+            className="backAdmin"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <span
+              className="adminword"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                fontFamily: "kanit",
+                fontSize: `1.6rem`,
+                color: "rgba(222, 237, 238, 0.998)",
+                fontWeight: 400,
+                paddingRight: `8px`,
+                paddingLeft: `8px`,
+                letterSpacing: `1px`,
+              }}
             >
-              <span
-                className="adminword"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  fontFamily: "kanit",
-                  fontSize: `1.6rem`,
-                  color: "rgba(222, 237, 238, 0.998)",
-                  fontWeight: 400,
-                  paddingRight: `8px`,
-                  paddingLeft: `8px`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                หน้าหลัก
-              </span>
-            </div>
+              หน้าหลัก
+            </span>
           </div>
-        
+        </div>
       </div>
       <div className="head-userpage usernav">
         <strong className="user-welcomee">
@@ -63,7 +55,7 @@ export default function UserScreen(props) {
           </AnimateOnChange> */}
           ยินดีต้อนรับคุณ
         </strong>
-        <font className="user-welcomee-name">POK</font>
+        <font className="user-welcomee-name">อานนท์ รุ่งเรือง</font>
         <div className="admin-word-nav-user">
           <div
             className="head-nav-user"
@@ -80,14 +72,13 @@ export default function UserScreen(props) {
                 color: "#000",
                 // fontWeight: 400,
               }}
-            >
-            </span>
+            ></span>
           </div>
         </div>
       </div>
       {/* <IconButton> */}
       <Link to={"/"} style={{ textDecoration: "none" }}>
-        <div className="logout-user" >
+        <div className="logout-user">
           {/* <p className="p-logout">ออกจากระบบ</p> */}
           <div
             style={{
@@ -111,12 +102,10 @@ export default function UserScreen(props) {
               </span>
             </div>
           </div>
-          <div className="logo-logout-navbar">
-            
-          </div>
+          <div className="logo-logout-navbar"></div>
         </div>
       </Link>
       {/* </IconButton> */}
     </Navbar>
-   
-  )}
+  );
+}
