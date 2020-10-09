@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ReactToExcel from "react-html-table-to-excel";
+import "./Excel.css";
 // import PageBversion2 from "./PageBversion2";
 function Excel() {
   const User = [

@@ -3,45 +3,45 @@ import UserScreen from "./UserScreen";
 import { Link } from "react-router-dom";
 // import PageBversion2 from "./PageBversion2";
 function PageAversion2(props) {
-  // const [users, setUsers] = useState();
-  // const [test, setTest] = useState(false);
-  // const [idProcess, setIdProcess] = useState("");
-  // const [community, setCommunity] = useState("");
-  // useEffect(() => {
-  //   async function commuFetch() {
-  //     const res = await fetch(
-  //       "http://defea17a0c6b.ngrok.io/user/AllProcess?userID=1&fbclid=IwAR01t6muf9KCHSU5lWfkDODC3Z2sCpywdJO3DWBDTxOwdE03ZuGwi5sbC-s"
-  //     );
-  //     res.json().then(async (res) => {
-  //       console.log.apply(res);
-  //       setUsers(res);
-  //       setCommunity(res);
-  //     });
-  //   }
-  //   commuFetch();
-  // }, []);
+  const [users, setUsers] = useState();
+  const [test, setTest] = useState(false);
+  const [idProcess, setIdProcess] = useState("");
+  const [community, setCommunity] = useState("");
+  useEffect(() => {
+    async function commuFetch() {
+      const res = await fetch(
+        "http://defea17a0c6b.ngrok.io/user/AllProcess?userID=1&fbclid=IwAR01t6muf9KCHSU5lWfkDODC3Z2sCpywdJO3DWBDTxOwdE03ZuGwi5sbC-s"
+      );
+      res.json().then(async (res) => {
+        console.log.apply(res);
+        setUsers(res);
+        setCommunity(res);
+      });
+    }
+    commuFetch();
+  }, []);
 
-  const Community = [
-    {
-      name: "การประปา",
-    },
-    {
-      name: "การให้บริการโทรศัพท์",
-    },
-    {
-      name: "การให้บริการไฟฟ้า",
-    },
-    {
-      name: "การให้บริการคมนาคม-ขนส่ง",
-    },
-  ];
+  // const Community = [
+  //   {
+  //     name: "การประปา",
+  //   },
+  //   {
+  //     name: "การให้บริการโทรศัพท์",
+  //   },
+  //   {
+  //     name: "การให้บริการไฟฟ้า",
+  //   },
+  //   {
+  //     name: "การให้บริการคมนาคม-ขนส่ง",
+  //   },
+  // ];
   // console.log(Community.name);
-  // const doClick = (id) => {
-  //   setIdProcess(id);
-  //   setTest(true);
+  const doClick = (id) => {
+    setIdProcess(id);
+    setTest(true);
 
-  //   props.history.push("/process");
-  // };
+    props.history.push("/process");
+  };
   return (
     <div>
       <UserScreen />
@@ -57,16 +57,14 @@ function PageAversion2(props) {
             </div>
             <div className="Line2">
               <div className="L21">ชื่อหน่วยงาน</div>
-              <div className="L22">งานเทคโนโลยีสารสนเทศ</div>
-              {/* <div className="L22">{users && users.user.agency}</div> */}
+
+              <div className="L22">{users && users.user.agency}</div>
             </div>
           </div>
 
           <div className="Inbox">
-            {Community &&
-              // {community &&
-              Community.map((Community, index) => (
-                // community.process.map((communitys, index) => (
+            {community &&
+              community.process.map((communitys, index) => (
                 <div className="sizeBox">
                   <div className="tab"></div>
                   <div className="numberIndex">{index + 1}</div>
@@ -74,8 +72,7 @@ function PageAversion2(props) {
                     <div>
                       <div className="settingCom">
                         {" "}
-                        {Community.name}
-                        {/* {communitys.description} */}
+                        {communitys.description}
                       </div>
                     </div>
                   </div>
@@ -83,10 +80,10 @@ function PageAversion2(props) {
                     <Link
                       to={{
                         pathname: "/process",
-                        // state: { community: communitys.id },
+                        state: { community: communitys.id },
                       }}
                       onClick={() => {
-                        // setIdProcess(communitys.id);
+                        setIdProcess(communitys.id);
                       }}
                     >
                       <button className="keyNextpage">

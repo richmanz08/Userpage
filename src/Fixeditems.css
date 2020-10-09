@@ -1,0 +1,41 @@
+.excel_save {
+  width: 30px;
+  height: 30px;
+}
+.png_save {
+  width: 30px;
+  height: 30px;
+}
+.pdf_save {
+  width: 30px;
+  height: 30px;
+}
+.fontexcel {
+  font-family: "Prompt";
+  font-size: 12px;
+  color: #006765;
+  border-style: solid;
+  border-color: #5493db;
+}
+.setbuttonToEXCEL {
+  /* display: none; */
+  /* border-radius: 30px; */
+  background-color: #5493db;
+}
+.HeadBox {
+  width: 500x;
+  background-color: rgb(163, 162, 162);
+  height: 500px;
+}
+.BoxSPDIAL {
+  width: 120px;
+  height: 120px;
+  margin-left: 420px;
+  /* margin-top: 20px; */
+}
+.BtnPDF {
+  display: none;
+}
+.BtnPNG {
+  display: none;
+}

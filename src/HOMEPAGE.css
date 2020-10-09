@@ -1,0 +1,159 @@
+.WindowsGrid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 6.7fr 3.3fr;
+  height: 100vh;
+  background-color: #e4e6e5;
+}
+.GridNew {
+  height: 100vh;
+  background-color: lawngreen;
+  background-image: url("https://images.pexels.com/photos/2725479/pexels-photo-2725479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.GridLogin {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+.imglogin {
+  width: 100%;
+  height: 100%;
+}
+.Box {
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.685);
+  height: 85%;
+  border-radius: 5px;
+}
+.zoneheader {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.linespace {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.61);
+  /* margin-bottom: 100px; */
+}
+.linespace2 {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.61);
+  margin-top: 50px;
+}
+.herderitems {
+  display: flex;
+  margin-left: 25px;
+}
+
+.icons1 {
+  width: 30px;
+  height: 30px;
+}
+.textnews {
+  margin-left: 7px;
+  font-family: "Prompt";
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.836);
+}
+.scroll {
+  overflow-y: scroll;
+  height: 80%;
+}
+.zonebody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-items: center; */
+}
+.bodygroup1 {
+  display: flex;
+  width: 80%;
+  margin-top: 25px;
+  height: 100px;
+}
+.pointer {
+  width: 15px;
+  height: 10px;
+  background-color: rgb(253, 253, 252);
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 12px;
+  /* margin-: ; */
+}
+.bodytext1 {
+  font-size: 25px;
+  font-family: "Prompt";
+  font-weight: 500;
+}
+.zonepicture {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  /* height: 30vh; */
+}
+.pictureCSS {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.datesystem {
+  margin-top: 60px;
+  /* margin-left: 20%; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: rgba(233, 222, 222, 0.616);
+  align-items: center;
+}
+.icons2 {
+  margin-left: 12%;
+  width: 25px;
+  height: 25px;
+}
+.datetext {
+  font-size: 20px;
+  font-family: "Prompt";
+  /* font-weight: 500; */
+  margin-left: 10px;
+}
+.datenews {
+  font-family: "Prompt";
+  margin-top: 30px;
+  margin-right: 40%;
+}
+.scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  border-radius: 30px;
+  background-color: rgba(163, 158, 158, 0);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.85);
+  width: 1.4rem;
+}
+@media (max-width: 1500px) {
+  .bodytext1 {
+    font-size: 20px;
+  }
+  .datetext {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .WindowsGrid {
+    grid-template-columns: 1fr;
+  }
+  .GridNew {
+    display: none;
+  }
+}
