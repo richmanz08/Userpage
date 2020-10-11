@@ -1,4 +1,3 @@
-import { Height } from "@material-ui/icons";
 import React from "react";
 import "./HOMEPAGE.css";
 // import PageBversion2 from "./PageBversion2";
@@ -55,7 +54,9 @@ function HOMEPAGE() {
                     <img className="icons2" src="./timesystems.png"></img>
                     <div className="datenews">{datanews.datepost}</div>
                   </div>
-                  <div className="linespace2"></div>
+                  <div className="containerspace">
+                    <div className="linespace2"></div>
+                  </div>
                 </div>
               ))}
           </div>
