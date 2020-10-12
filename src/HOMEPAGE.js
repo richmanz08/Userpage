@@ -2,6 +2,8 @@ import React from "react";
 import "./HOMEPAGE.css";
 // import PageBversion2 from "./PageBversion2";
 function HOMEPAGE() {
+  const [closee, setclosee] = React.useState("");
+
   const datanews = [
     {
       text1:
@@ -42,7 +44,6 @@ function HOMEPAGE() {
               datanews.map((datanews, index) => (
                 <div className="zonebody">
                   <div className="bodygroup1">
-                    {/* <div className="pointer"></div> */}
                     <img className="pin" src="./pin.png"></img>
                     <div className="bodytext1">{datanews.text1}</div>
                   </div>
@@ -64,6 +65,61 @@ function HOMEPAGE() {
       </div>
       <div className="GridLogin">
         <img className="imglogin" src="./log.jpg"></img>
+        <div
+          className="Modalcontainer"
+          style={{ visibility: `${closee}` }}
+          onClick={() => {
+            setclosee("hidden");
+          }}
+        >
+          <div className="Box">
+            <div className="zoneheader">
+              <div className="herderitems">
+                <img className="icons1" src="./chatlogin.png"></img>
+                <div className="textnews">ข่าวประชาสัมพันธ์ทั่วไป</div>
+                <div className="CloseModalContainer">
+                  <img
+                    className={`ButtonCloseModal`}
+                    src="./closeModal.png"
+                    // aria-hidden="true"
+                    onClick={() => {
+                      setclosee("hidden");
+                    }}
+                  ></img>
+                </div>
+              </div>
+            </div>
+            <div className="linespace"></div>
+            <div className="scroll">
+              {datanews &&
+                datanews.map((datanews, index) => (
+                  <div className="zonebody">
+                    <div className="bodygroup1">
+                      {/* <div className="pointer"></div> */}
+                      <img className="pin" src="./pin.png"></img>
+                      <div className="bodytext1">{datanews.text1}</div>
+                    </div>
+
+                    <div className="descriptioncontainer">
+                      <div className="description">{datanews.description}</div>
+                    </div>
+                    <div className="datenewscontainer">
+                      <img className="icons2" src="./timesystems.png"></img>
+                      <div className="datenews">{datanews.datepost}</div>
+                    </div>
+                    <div className="containerspace">
+                      <div className="linespace2"></div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="TouchContainer">
+            <div className="TouchText" id="show">
+              แตะที่ใดก็ได้เพื่อออกจากหน้าจอนี้
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

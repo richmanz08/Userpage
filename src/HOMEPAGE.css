@@ -65,7 +65,7 @@
   font-family: "Prompt";
   font-size: 20px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.836);
+  color: rgba(73, 73, 73, 0.945);
 }
 .scroll {
   overflow-y: scroll;
@@ -111,10 +111,14 @@
   width: 80%;
   height: fit-content;
   display: flex;
-  background-color: rgba(233, 222, 222, 0.616);
+  /* background-color: rgba(233, 222, 222, 0.616); */
   background-color: rgba(240, 232, 232, 0.815);
   padding: 2rem;
 }
+
+/* .closee {
+  visibility: hidden;
+} */
 .icons2 {
   margin-left: 12%;
   width: 25px;
@@ -127,6 +131,7 @@
   margin-left: 10px;
   width: fit-content;
   height: fit-content;
+  color: rgba(46, 46, 46, 0.945);
 }
 .datenews {
   font-family: "Prompt";
@@ -153,6 +158,19 @@
   background-color: hsla(0, 0%, 100%, 0.85);
   width: 1.4rem;
 }
+.Modalcontainer {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* transition: all 0.3s ease-in-out 0s; */
+}
+.ButtonCloseModal {
+  /* position: absolute; */
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
 @media (max-width: 1500px) {
   .bodytext1 {
     font-size: 20px;
@@ -167,8 +185,180 @@
   }
   .GridNew {
     display: none;
+    /* position: absolute; */
+  }
+  /* .GridLogin {
+    position: absolute;
+  } */
+  .Modalcontainer {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(46, 46, 46, 0.452);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    top: 0%;
+    flex-direction: column;
+    transition: opacity 0.15s linear;
+    visibility: visible;
+  }
+
+  .Box {
+    background-color: rgb(231, 236, 226);
+    width: 65%;
+    height: 70%;
+  }
+  .TouchContainer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* background-color: crimson; */
+    align-items: center;
+    margin-top: 22.5px;
+  }
+  .TouchText {
+    font-family: "Prompt";
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+  }
+  .bodytext1 {
+    font-weight: 600;
+  }
+  .linespace {
+    background-color: rgba(97, 96, 96, 0.973);
+  }
+  .linespace2 {
+    background-color: rgba(97, 96, 96, 0.973);
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 6%, 80%, 0.85);
+    width: 1.4rem;
+  }
+  .descriptioncontainer {
+    /* background-color: rgb(250, 241, 119); */
+    /* background-color: rgb(139, 216, 120); */
+    background-color: rgb(78, 78, 77);
+  }
+  .description {
+    margin-left: 0px;
+    font-size: 18px;
+    color: gainsboro;
+  }
+  .datenewscontainer {
+    margin-top: 15px;
+    justify-content: center;
+  }
+  .datenews {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 1%;
+  }
+  .icons2 {
+    margin: 0;
+  }
+  .scroll {
+    height: 75%;
+  }
+  .CloseModalContainer {
+    position: absolute;
+    /* top: 5%; */
+    left: 48%;
+    bottom: 5%;
+    /* top: 95%; */
   }
 }
+@media (max-width: 800px) {
+  .bodytext1 {
+    font-size: 16px;
+  }
+  .pin {
+    width: 18px;
+    height: 18px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .TouchText {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .descriptioncontainer {
+    padding: 0.5rem;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .textnews {
+    font-size: 16px;
+  }
+  .bodytext1 {
+    font-size: 15px;
+  }
+  .bodygroup1 {
+    margin-top: 17px;
+    height: fit-content;
+  }
+  .icons1 {
+    width: 25px;
+    height: 25px;
+  }
+  .herderitems {
+    margin-left: 5px;
+  }
+  .pin {
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+  }
+  .zoneheader {
+    height: 70px;
+  }
+  .icons2 {
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
+  }
+  .datenews {
+    font-size: 11px;
+    margin-left: 2px;
+  }
+  .TouchContainer {
+    margin: 0;
+    margin-top: 5px;
+  }
+  .TouchText {
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .datenews {
+    font-size: 10px;
+  }
+  .textnews {
+    font-size: 14px;
+  }
+}
+/* Height//////////////////////////
+///////////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+////////////////////////////////// */
 @media (max-height: 820px) {
   .scroll {
     height: 70%;
